@@ -6,7 +6,7 @@ To do that, it use the controller-gen (standard librairy used by operator-sdk) t
 ## Installation
 
 ```
-go install github.com/disaster37/crossplane-crd-generator@v1.0.1
+go install github.com/aureeoy/crossplane-crd-generator@v1.0.1
 ```
 
 ## Usage
