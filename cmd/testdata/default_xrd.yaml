@@ -1,4 +1,4 @@
-apiVersion: apiextensions.crossplane.io/v1
+apiVersion: apiextensions.crossplane.io/v2
 kind: CompositeResourceDefinition
 metadata:
   name: xtests.test.crossplane.io
@@ -9,6 +9,7 @@ spec:
     listKind: XTestList
     plural: xtests
     singular: xtest
+  scope: Namespaced
   versions:
   - name: v1alpha1
     referenceable: true

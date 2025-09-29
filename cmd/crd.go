@@ -180,11 +180,10 @@ func generateCRD(sourcePath string, targetPath string, options GenerateCrdOption
 		}
 
 		// Clean map and write final file
-		obj["apiVersion"] = "apiextensions.crossplane.io/v1"
+		obj["apiVersion"] = "apiextensions.crossplane.io/v2"
 		obj["kind"] = "CompositeResourceDefinition"
 		delete(obj["metadata"].(map[string]any), "creationTimestamp")
 		delete(obj["metadata"].(map[string]any), "annotations")
-		delete(obj["spec"].(map[string]any), "scope")
 
 		spec := obj["spec"].(map[string]any)
 
